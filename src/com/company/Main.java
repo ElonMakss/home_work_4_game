@@ -80,7 +80,7 @@ public class Main {
                             superStrike + " " + (heroesStrike[i] * coeff));
                 } else if (heroesNames[i].equals("Medic ")) {
                     int heroCoeff = getMedicStrike();
-                    if (heroesHealth[heroCoeff] > 0) {
+                    if (heroesHealth[heroCoeff] > 100) {
                         heroesHealth[heroCoeff] = heroesHealth[heroCoeff] + heroesStrike[3];
                         System.out.println(heroesNames[heroCoeff] + " have +" + heroesStrike[3] + " HP");
                     } else {
